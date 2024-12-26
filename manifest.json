@@ -1,0 +1,17 @@
+{
+  "name": "Image Generator App",
+  "short_name": "IMG Generator",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "gray",
+  "theme": "black",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "400×400",
+      "type": "image/png"
+    }
+  ],
+  "description": "this App Was Developed By Sadiq When Learning JavaScript"
+}
+

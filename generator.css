@@ -1,0 +1,107 @@
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  margin: 0;
+  font-family: arial;
+}
+
+.images{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 90%;
+  overflow-y: scroll;
+  column-gap: .5rem;
+  row-gap: 1rem;
+}
+
+
+.images .image{
+  height: 200px;
+  border: 2px solid white;
+  background: #A3A3A3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+}
+
+.generate{
+  width: 70%;
+  padding: .5rem;
+  border: none;
+  background: #34FFB9;
+  color: black;
+  border-radius: .5rem;
+  bottom: 1rem;
+  position: fixed;
+}
+
+.opener{
+  position: relative;
+  bottom: 2rem;
+  font-size: .7rem;
+  text-decoration: none;
+  background: #0A57DC;
+  text-align: center;
+  color: white;
+  width: 60%;
+  padding: .5rem;
+  border-radius: .5rem
+}
+
+
+.loader{
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  border-bottom: transparent;
+  animation: load .5s 0s linear infinite;
+  background: transparent;
+  position: relative;
+  top: 45%;
+}
+
+@keyframes load{
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+
+.viewer{
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: absolute;
+  z-index: 5;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.viewer img{
+  width: 80%;
+  height: 70%;
+}
+
+.viewer .close{
+  background: red;
+  width: 40%;
+  padding: .5rem;
+  text-align: center;
+  border-radius: .2rem;
+  font-weight: bold;
+}
